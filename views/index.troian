@@ -9,11 +9,12 @@
             don't use template over static field
             var header = template.partial.header();
         */
+        console.log("index.troian loaded");
     %>
 </troian>
 <html>
     <%(template.partial.header())%>
     <body>
-        hi
+        hiaaa
     </body>
 </html>

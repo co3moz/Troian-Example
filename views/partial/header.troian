@@ -2,5 +2,10 @@
     Author: co3moz
     Date: 03.06.2015
     Purpose: Head of every page
+	<%static
+		console.log("header loaded");
+	%>
 </troian>
-
+<head>
+test  a   
+</head>

@@ -1,0 +1,19 @@
+<troian>
+    Author: co3moz
+    Date: 03.06.2015
+    Purpose: Illustrate main view
+    Uses:
+        + partial/header.troian
+    <%static
+        /*
+            don't use template over static field
+            var header = template.partial.header();
+        */
+    %>
+</troian>
+<html>
+    <%(template.partial.header())%>
+    <body>
+        hi
+    </body>
+</html>

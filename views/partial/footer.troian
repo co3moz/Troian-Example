@@ -1,0 +1,13 @@
+<troian params="who">
+    Author: co3moz
+    Date: 03.06.2015
+    Purpose: Head of every page
+    <%static
+        console.log("footer loaded");
+    %>
+</troian>
+<%
+    who || (who = "no body");
+%>
+
+Hello <%(who)%>, how are you?

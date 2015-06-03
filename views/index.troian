@@ -1,20 +1,25 @@
-<troian>
+<troian params="req,res">
     Author: co3moz
     Date: 03.06.2015
-    Purpose: Illustrate main view
+    Purpose: main view
     Uses:
         + partial/header.troian
     <%static
-        /*
-            don't use template over static field
-            var header = template.partial.header();
-        */
+        var header;
+
+        // wait until all templates loaded
+        setTimeout(function() {
+            header = template.partial.header();
+        }, 100);
+
         console.log("index.troian loaded");
     %>
 </troian>
 <html>
-    <%(template.partial.header())%>
+    <%(header)%>
     <body>
         hiaaa
+
+        <%(template.partial.footer(req.query.who))%>
     </body>
 </html>

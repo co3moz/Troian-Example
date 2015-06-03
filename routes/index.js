@@ -2,7 +2,7 @@ function route (app) {
   app.get('/', function (req, res) {
     var template = app.get("troian");
 
-    res.send(template.index());
+    res.send(template.index(req, res));
   });
 }
 
